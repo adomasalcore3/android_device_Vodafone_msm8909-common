@@ -8,7 +8,7 @@
 /dev/rfkill			u:object_r:wpa_device:s0
 
 /persist/sensors/sensors_settings	u:object_r:sensors_persist_file:s0
-/persist-lg(/.*)?			u:object_r:persist_drm_file:s0
+/persist-htc(/.*)?			u:object_r:persist_drm_file:s0
 
 /sys/devices/platform/kcal_ctrl.0(/.*)?			u:object_r:kcal_dev:s0
 /sys/bus/platform/drivers/kcal_ctrl(/.*)?		u:object_r:kcal_dev:s0
