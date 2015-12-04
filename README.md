@@ -1,1 +1,1 @@
-Common device configuration for LGE msm8610 based devices
+Common device configuration for HTC msm8909 based devices
