@@ -19,7 +19,7 @@ $(call inherit-product, frameworks/native/build/phone-hdpi-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Specific overlay
-DEVICE_PACKAGE_OVERLAYS += device/lge/msm8610-common/overlay
+DEVICE_PACKAGE_OVERLAYS += device/htc/msm8909-common/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -52,73 +52,73 @@ PRODUCT_COPY_FILES += \
 
 # Configs
 PRODUCT_COPY_FILES += \
-    device/lge/msm8610-common/prebuilt/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-    device/lge/msm8610-common/prebuilt/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
-    kernel/lge/msm8610/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
-    kernel/lge/msm8610/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
-    kernel/lge/msm8610/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
-    device/lge/msm8610-common/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
-    device/lge/msm8610-common/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin \
-    device/lge/msm8610-common/prebuilt/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
-    device/lge/msm8610-common/prebuilt/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
-    device/lge/msm8610-common/prebuilt/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
-    device/lge/msm8610-common/prebuilt/etc/audio_policy.conf:system/etc/audio_policy.conf \
-    device/lge/msm8610-common/prebuilt/etc/audio_effects.conf:system/etc/audio_effects.conf \
-    device/lge/msm8610-common/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml \
-    device/lge/msm8610-common/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
-    device/lge/msm8610-common/prebuilt/usr/idc/touch_dev.idc:system/usr/idc/touch_dev.idc \
-    device/lge/msm8610-common/prebuilt/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-    device/lge/msm8610-common/prebuilt/etc/init.zetaw.fm.sh:system/etc/init.zetaw.fm.sh \
-    device/lge/msm8610-common/prebuilt/etc/init.zetaw.ssr.wifi.sh:system/etc/init.zetaw.ssr.wifi.sh \
-    device/lge/msm8610-common/prebuilt/etc/init.zetaw.wifi.sh:system/etc/init.zetaw.wifi.sh \
-    device/lge/msm8610-common/prebuilt/etc/init.crda.sh:system/etc/init.crda.sh \
-    device/lge/msm8610-common/prebuilt/etc/init.zetaw.post_boot.sh:system/etc/init.zetaw.post_boot.sh \
-    device/lge/msm8610-common/prebuilt/etc/sap.conf:system/etc/sap.conf \
-    device/lge/msm8610-common/prebuilt/etc/gps.conf:system/etc/gps.conf \
-    device/lge/msm8610-common/prebuilt/etc/msap.conf:system/etc/msap.conf \
-    device/lge/msm8610-common/prebuilt/etc/clatd.conf:system/etc/clatd.conf \
-    device/lge/msm8610-common/prebuilt/etc/sec_config:system/etc/sec_config \
-    device/lge/msm8610-common/prebuilt/etc/izat.conf:system/etc/izat.conf \
-    device/lge/msm8610-common/prebuilt/etc/boot_fixup:system/etc/boot_fixup \
-    device/lge/msm8610-common/prebuilt/etc/quipc.conf:system/etc/quipc.conf
-#    device/lge/msm8610-common/prebuilt/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-#    device/lge/msm8610-common/prebuilt/etc/nfc-nci.conf:system/etc/nfc-nci.conf \
-#    device/lge/msm8610-common/prebuilt/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
-#    device/lge/msm8610-common/prebuilt/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
+    device/htc/msm8909-common/prebuilt/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
+    device/htc/msm8909-common/prebuilt/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
+    kernel/htc/msm8909/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
+    kernel/htc/msm8909/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
+    kernel/htc/msm8909/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
+    device/htc/msm8909-common/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
+    device/htc/msm8909-common/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin \
+    device/htc/msm8909-common/prebuilt/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
+    device/htc/msm8909-common/prebuilt/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
+    device/htc/msm8909-common/prebuilt/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+    device/htc/msm8909-common/prebuilt/etc/audio_policy.conf:system/etc/audio_policy.conf \
+    device/htc/msm8909-common/prebuilt/etc/audio_effects.conf:system/etc/audio_effects.conf \
+    device/htc/msm8909-common/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml \
+    device/htc/msm8909-common/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
+    device/htc/msm8909-common/prebuilt/usr/idc/touch_dev.idc:system/usr/idc/touch_dev.idc \
+    device/htc/msm8909-common/prebuilt/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+    device/htc/msm8909-common/prebuilt/etc/init.zetaw.fm.sh:system/etc/init.zetaw.fm.sh \
+    device//htc/msm8909-common/prebuilt/etc/init.zetaw.ssr.wifi.sh:system/etc/init.zetaw.ssr.wifi.sh \
+    device/htc/msm8909-common/prebuilt/etc/init.zetaw.wifi.sh:system/etc/init.zetaw.wifi.sh \
+    device/htc/msm8909-common/prebuilt/etc/init.crda.sh:system/etc/init.crda.sh \
+    device/htc/msm8909-common/prebuilt/etc/init.zetaw.post_boot.sh:system/etc/init.zetaw.post_boot.sh \
+    device/htc/msm8909-common/prebuilt/etc/sap.conf:system/etc/sap.conf \
+    device/htc/msm8909-common/prebuilt/etc/gps.conf:system/etc/gps.conf \
+    device/htc/msm8909-common/prebuilt/etc/msap.conf:system/etc/msap.conf \
+    device/htc/msm8909-common/prebuilt/etc/clatd.conf:system/etc/clatd.conf \
+    device/htc/msm8909-common/prebuilt/etc/sec_config:system/etc/sec_config \
+    device/htc/msm8909-common/prebuilt/etc/izat.conf:system/etc/izat.conf \
+    device/htc/msm8909-common/prebuilt/etc/boot_fixup:system/etc/boot_fixup \
+    device/htc/msm8909-common/prebuilt/etc/quipc.conf:system/etc/quipc.conf
+#    device/htc/msm8909-common/prebuilt/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+#    device/htc/msm8909-common/prebuilt/etc/nfc-nci.conf:system/etc/nfc-nci.conf \
+#    device/htc/msm8909-common/prebuilt/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
+#    device/htc/msm8909-common/prebuilt/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/lge/msm8610-common/rootdir/init.class_main.sh:root/init.class_main.sh \
-    device/lge/msm8610-common/rootdir/init.lge.early.rc:root/init.lge.early.rc \
-    device/lge/msm8610-common/rootdir/init.lge.log.rc:root/init.lge.log.rc \
-    device/lge/msm8610-common/rootdir/init.lge.rc:root/init.lge.rc \
-    device/lge/msm8610-common/rootdir/init.mdm.sh:root/init.mdm.sh \
-    device/lge/msm8610-common/rootdir/init.usb.rc:root/init.usb.rc \
-    device/lge/msm8610-common/rootdir/init.msm8610.rc:root/init.msm8610.rc \
-    device/lge/msm8610-common/rootdir/init.msm8610.usb.rc:root/init.msm8610.usb.rc \
-    device/lge/msm8610-common/rootdir/init.msm8610_product.rc:root/init.msm8610_product.rc \
-    device/lge/msm8610-common/rootdir/init.zetaw.bt_vendor.rc:root/init.zetaw.bt_vendor.rc \
-    device/lge/msm8610-common/rootdir/init.zetaw.class_core.sh:root/init.zetaw.class_core.sh \
-    device/lge/msm8610-common/rootdir/init.zetaw.cmm.usb.sh:root/init.zetaw.cmm.usb.sh \
-    device/lge/msm8610-common/rootdir/init.zetaw.early_boot.sh:root/init.zetaw.early_boot.sh \
-    device/lge/msm8610-common/rootdir/init.zetaw.factory.sh:root/init.zetaw.factory.sh \
-    device/lge/msm8610-common/rootdir/init.zetaw.rc:root/init.zetaw.rc \
-    device/lge/msm8610-common/rootdir/init.zetaw.ril.sh:root/init.zetaw.ril.sh \
-    device/lge/msm8610-common/rootdir/init.zetaw.sh:root/init.zetaw.sh \
-    device/lge/msm8610-common/rootdir/init.zetaw.ssr.sh:root/init.zetaw.ssr.sh \
-    device/lge/msm8610-common/rootdir/init.zetaw.syspart_fixup.sh:root/init.zetaw.syspart_fixup.sh \
-    device/lge/msm8610-common/rootdir/init.zetaw.usb.rc:root/init.zetaw.usb.rc \
-    device/lge/msm8610-common/rootdir/init.zetaw.usb.sh:root/init.zetaw.usb.sh \
-    device/lge/msm8610-common/rootdir/ueventd.msm8610.rc:root/ueventd.msm8610.rc \
-    device/lge/msm8610-common/prebuilt/etc/init.zetaw.bt.sh:system/etc/init.zetaw.bt.sh 
+    device/htc/msm8909-common/rootdir/init.class_main.sh:root/init.class_main.sh \
+    device/htc/msm8909-common/rootdir/init.htc.early.rc:root/init.htc.early.rc \
+    device/htc/msm8909-common/rootdir/init.htc_a32e.log.rc:root/init.htc_a32e.log.rc \
+    device/htc/msm8909-common/rootdir/init.htc_a32e.rc:root/init.htc.rc \
+    device/htc/msm8909-common/rootdir/init.mdm.sh:root/init.mdm.sh \
+    device/htc/msm8909-common/rootdir/init.usb.rc:root/init.usb.rc \
+    device/htc/msm8909-common/rootdir/init.msm8909.rc:root/init.msm8909.rc \
+    device/htc/msm8909-common/rootdir/init.msm8909.usb.rc:root/init.msm8909.usb.rc \
+    device/htc/msm8909-common/rootdir/init.msm8909_product.rc:root/init.msm8610_product.rc \
+    device/htc/msm8909-common/rootdir/init.zetaw.bt_vendor.rc:root/init.zetaw.bt_vendor.rc \
+    device/htc/msm8909-common/rootdir/init.zetaw.class_core.sh:root/init.zetaw.class_core.sh \
+    device/htc/msm8909-common/rootdir/init.zetaw.cmm.usb.sh:root/init.zetaw.cmm.usb.sh \
+    device/htc/msm8909-common/rootdir/init.zetaw.early_boot.sh:root/init.zetaw.early_boot.sh \
+    device/htc/msm8909-common/rootdir/init.zetaw.factory.sh:root/init.zetaw.factory.sh \
+    device/htc/msm8909-common/rootdir/init.zetaw.rc:root/init.zetaw.rc \
+    device/htc/msm8909-common/rootdir/init.zetaw.ril.sh:root/init.zetaw.ril.sh \
+    device/htc/msm8909-common/rootdir/init.zetaw.sh:root/init.zetaw.sh \
+    device/htc/msm8909-common/rootdir/init.zetaw.ssr.sh:root/init.zetaw.ssr.sh \
+    device/htc/msm8909-common/rootdir/init.zetaw.syspart_fixup.sh:root/init.zetaw.syspart_fixup.sh \
+    device/htc/msm8909-common/rootdir/init.zetaw.usb.rc:root/init.zetaw.usb.rc \
+    device/htc/msm8909-common/rootdir/init.zetaw.usb.sh:root/init.zetaw.usb.sh \
+    device/htc/msm8909-common/rootdir/ueventd.msm8909.rc:root/ueventd.msm8909.rc \
+    device/htc/msm8909-common/prebuilt/etc/init.zetaw.bt.sh:system/etc/init.zetaw.bt.sh 
 
 # TWRP
 PRODUCT_COPY_FILES += \
-    device/lge/msm8610-common/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
+    device/htc/msm8909-common/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio.primary.msm8610 \
+    audio.primary.msm8909 \
     audio.a2dp.default \
     audio.usb.default \
     audio.r_submix.default \
@@ -199,17 +199,17 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    gps.msm8610
+    gps.msm8909
 
 # HAL
 PRODUCT_PACKAGES += \
-    copybit.msm8610\
-    gralloc.msm8610 \
-    hwcomposer.msm8610 \
-    keystore.msm8610 \
-    lights.msm8610 \
-    memtrack.msm8610 \
-    power.msm8610
+    copybit.msm8909\
+    gralloc.msm8909 \
+    hwcomposer.msm8909 \
+    keystore.msm8909 \
+    lights.msm8909 \
+    memtrack.msm8909 \
+    power.msm8909
 
 # Utilities
 PRODUCT_PACKAGES += \
@@ -222,7 +222,7 @@ PRODUCT_PACKAGES += \
 
 # EGL config
 PRODUCT_COPY_FILES += \
-    device/lge/msm8610-common/prebuilt/egl.cfg:system/lib/egl/egl.cfg
+    device/htc/msm8909-common/prebuilt/egl.cfg:system/lib/egl/egl.cfg
 
 # Opengles version 3
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -334,13 +334,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     av.streaming.offload.enable=false \
     audio.offload.pcm.enable=false \
     mm.enable.smoothstreaming=true \
-    persist.audio.calfile0=/etc/ACDB/Bluetooth_cal.acdb \
-    persist.audio.calfile1=/etc/ACDB/General_cal.acdb \
-    persist.audio.calfile2=/etc/ACDB/Global_cal.acdb \
-    persist.audio.calfile3=/etc/ACDB/Handset_cal.acdb \
-    persist.audio.calfile4=/etc/ACDB/Hdmi_cal.acdb \
-    persist.audio.calfile5=/etc/ACDB/Headset_cal.acdb \
-    persist.audio.calfile6=/etc/ACDB/Speaker_cal.acdb
+    persist.audio.calfile0=/etc/acdbdata/MTP/Bluetooth_cal.acdb \
+    persist.audio.calfile1=/etc/acdbdata/MTP/General_cal.acdb \
+    persist.audio.calfile2=/etc/acdbdata/MTP/Global_cal.acdb \
+    persist.audio.calfile3=/etc/acdbdata/MTP/Handset_cal.acdb \
+    persist.audio.calfile4=/etc/acdbdata/MTP/Hdmi_cal.acdb \
+    persist.audio.calfile5=/etc/acdbdata/MTP/Headset_cal.acdb \
+    persist.audio.calfile6=/etc/acdbdata/MTP/Speaker_cal.acdb
 
 # Media codecs
 PRODUCT_COPY_FILES += \
@@ -365,7 +365,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #    nfc_nci.w \
 #    com.android.nfc_extras
 
-#NFCEE_ACCESS_PATH := device/lge/w/prebuilt/etc/nfcee_access.xml
+#NFCEE_ACCESS_PATH := device/htc/a32e/prebuilt/etc/nfcee_access.xml
 
 # QC time services
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -377,7 +377,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
-$(call inherit-product, vendor/lge/msm8610-common/msm8610-vendor.mk)
+$(call inherit-product, vendor/htc/msm8909-common/msm8909-vendor.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/vendor/lib/libril-qc-qmi-1.so \
@@ -394,12 +394,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.qcril_am_enabled=1 \
     wlan.chip.vendor=qcom \
     wlan.chip.version=wcn \
-    wifi.lge.patch=true \
-    wifi.lge.sleeppolicy=0 \
-    wifi.lge.offdelay=false \
-    wlan.lge.concurrency=MCC \
-    wlan.lge.supportsimaka=YES \
-    wifi.lge.hanglessid=false \
+    wifi.htc.patch=true \
+    wifi.htc.sleeppolicy=0 \
+    wifi.htc.offdelay=false \
+    wlan.htc.concurrency=MCC \
+    wlan.htc.supportsimaka=YES \
+    wifi.htc.hanglessid=false \
     drm.service.enabled=true \
     mmp.enable.3g2=true \
     media.aac_51_output_enabled=true \
