@@ -24,7 +24,7 @@
 USE_CAMERA_STUB := false
 TARGET_NO_BOOTLOADER := true
 
-TARGET_SPECIFIC_HEADER_PATH += device/lge/msm8610-common/include
+TARGET_SPECIFIC_HEADER_PATH += device/htc/msm8909-common/include
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
@@ -33,28 +33,29 @@ TARGET_INIT_VENDOR_LIB := libinit_msm
 # Platform
 TARGET_ARCH := arm
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno302
-TARGET_BOARD_PLATFORM := msm8610
-TARGET_CPU_VARIANT := krait
+TARGET_BOARD_PLATFORM := msm8909
+TARGET_CPU_VARIANT := cortex-a7
 TARGET_USE_KINGFISHER_OPTIMIZATION := true
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
 ARCH_ARM_HAVE_TLS_REGISTER := true
-TARGET_BOOTLOADER_BOARD_NAME := MSM8610
+TARGET_BOOTLOADER_BOARD_NAME := MSM8909
 
 # Kernel image
 BOARD_KERNEL_SEPARATED_DT := true
-TARGET_KERNEL_SOURCE := kernel/lge/msm8610
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=23 msm_rtb.filter=0x37 androidboot.hardware=msm8610
-BOARD_KERNEL_BASE := 0x00000000
+TARGET_KERNEL_SOURCE := kernel/htc/msm8909
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlyprintk vmalloc=400m androidboot.hardware=htc_a32e androidusb.pid=0x0668"
+ androidboot.hardware=msm8909
+BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x82000000 --tags_offset 0x80f00100
 
 # Offmode Charging
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGER_SHOW_PERCENTAGE := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
-BOARD_HEALTHD_CUSTOM_CHARGER := device/lge/msm8610-common/charger/healthd_mode_charger.cpp
+BOARD_HEALTHD_CUSTOM_CHARGER := device/htc/msm8909-common/charger/healthd_mode_charger.cpp
 COMMON_GLOBAL_CFLAGS += \
     -DBOARD_CHARGING_CMDLINE_NAME='"androidboot.mode"' \
     -DBOARD_CHARGING_CMDLINE_VALUE='"chargerlogo"'
@@ -77,7 +78,7 @@ TARGET_USES_QCOM_COMPRESSED_AUDIO := true
 TARGET_NO_RPC := true
 
 # Graphics
-BOARD_EGL_CFG := device/lge/msm8610-common/prebuilt/egl.cfg
+BOARD_EGL_CFG := device/htc/msm8909-common/prebuilt/egl.cfg
 TARGET_DISPLAY_USE_RETIRE_FENCE := true
 USE_OPENGL_RENDERER := true
 TARGET_USES_C2D_COMPOSITION :=
@@ -92,7 +93,7 @@ TARGET_POWERHAL_VARIANT := qcom
 TARGET_USES_CPU_BOOST_HINT := true
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/msm8610-common/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/msm8909-common/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
@@ -152,7 +153,7 @@ BOARD_RECOVERY_ALWAYS_WIPES := true
 
 # TWRP Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_FSTAB := device/lge/msm8610-common/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/htc/msm8909-common/recovery.fstab
 RECOVERY_FSTAB_VERSION := 2
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 #RECOVERY_GRAPHICS_USE_LINELENGTH := true
@@ -180,7 +181,7 @@ TARGET_RECOVERY_QCOM_RTC_FIX := true
 include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-        device/lge/msm8610-common/sepolicy
+        device/htc/msm8909-common/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     device.te \
@@ -193,7 +194,7 @@ BOARD_SEPOLICY_UNION += \
     kcal_dev.te \
     kernel.te \
     keystore.te \
-    lge_touch_sysfs.te \
+    htc_touch_sysfs.te \
     mediaserver.te \
     mm-pp-daemon.te \
     mm-qcamerad.te \
