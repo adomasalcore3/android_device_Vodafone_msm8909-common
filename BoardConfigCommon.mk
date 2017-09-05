@@ -24,7 +24,7 @@
 USE_CAMERA_STUB := false
 TARGET_NO_BOOTLOADER := true
 
-TARGET_SPECIFIC_HEADER_PATH += device/htc/msm8909-common/include
+TARGET_SPECIFIC_HEADER_PATH += device/Vodafone/msm8909-common/include
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
@@ -44,8 +44,8 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8909
 
 # Kernel image
 BOARD_KERNEL_SEPARATED_DT := true
-TARGET_KERNEL_SOURCE := kernel/htc/msm8909
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlyprintk vmalloc=400m androidboot.hardware=htc_a32e androidusb.pid=0x0668"
+TARGET_KERNEL_SOURCE := kernel/Vodafone/msm8909
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlyprintk vmalloc=400m androidboot.hardware=Vodafone_VFD600 androidusb.pid=0x0668"
  androidboot.hardware=msm8909
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -55,7 +55,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x82000000 --tags_offset 0x80f00100
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGER_SHOW_PERCENTAGE := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
-BOARD_HEALTHD_CUSTOM_CHARGER := device/htc/msm8909-common/charger/healthd_mode_charger.cpp
+BOARD_HEALTHD_CUSTOM_CHARGER := device/Vodafone/msm8909-common/charger/healthd_mode_charger.cpp
 COMMON_GLOBAL_CFLAGS += \
     -DBOARD_CHARGING_CMDLINE_NAME='"androidboot.mode"' \
     -DBOARD_CHARGING_CMDLINE_VALUE='"chargerlogo"'
