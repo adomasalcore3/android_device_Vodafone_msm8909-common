@@ -1,7 +1,7 @@
 #!/bin/bash
 
-VENDOR=htc
-DEVICE=a32e
+VENDOR=Vodafone
+DEVICE=VFD600
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 
