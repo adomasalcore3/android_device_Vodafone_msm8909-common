@@ -78,7 +78,7 @@ TARGET_USES_QCOM_COMPRESSED_AUDIO := true
 TARGET_NO_RPC := true
 
 # Graphics
-BOARD_EGL_CFG := device/htc/msm8909-common/prebuilt/egl.cfg
+BOARD_EGL_CFG := device/Vodafone/msm8909-common/prebuilt/egl.cfg
 TARGET_DISPLAY_USE_RETIRE_FENCE := true
 USE_OPENGL_RENDERER := true
 TARGET_USES_C2D_COMPOSITION :=
@@ -93,7 +93,7 @@ TARGET_POWERHAL_VARIANT := qcom
 TARGET_USES_CPU_BOOST_HINT := true
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/msm8909-common/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/Vodafone/msm8909-common/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
@@ -153,7 +153,7 @@ BOARD_RECOVERY_ALWAYS_WIPES := true
 
 # TWRP Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_FSTAB := device/htc/msm8909-common/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/Vodafone/msm8909-common/recovery.fstab
 RECOVERY_FSTAB_VERSION := 2
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 #RECOVERY_GRAPHICS_USE_LINELENGTH := true
@@ -181,7 +181,7 @@ TARGET_RECOVERY_QCOM_RTC_FIX := true
 include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-        device/htc/msm8909-common/sepolicy
+        device/Vodafone/msm8909-common/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     device.te \
@@ -194,7 +194,7 @@ BOARD_SEPOLICY_UNION += \
     kcal_dev.te \
     kernel.te \
     keystore.te \
-    htc_touch_sysfs.te \
+    Vodafone_touch_sysfs.te \
     mediaserver.te \
     mm-pp-daemon.te \
     mm-qcamerad.te \
